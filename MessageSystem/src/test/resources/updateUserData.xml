@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+        <MUser id="1" firstname="Богдан" lastname="Ворона" password="bohdan" userName="feodot"/>
+        <MUser id="2" firstname="Таня" lastname="Ворона" password="tanya83" userName="tanya"/>
+        <MUser id="3" firstname="Ира" lastname="Ворона" password="ira2013" userName="irulya"/>        
+</dataset>

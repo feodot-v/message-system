@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dataset>
+        <Message id="1" title="Привет" fromUser="feodot" toUser="tanya"/>
+        <Message id="2" title="Привет" fromUser="tanya"  toUser="feodot"/>
+        
+        <MUser id="1" firstname="Богдан" lastname="Ворона" password="bohdan"  userName="feodot"/>
+        <MUser id="2" firstname="Таня"   lastname="Ворона" password="tanya83" userName="tanya"/>
+</dataset>

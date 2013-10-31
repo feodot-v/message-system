@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <jboss-web>
+  <servlet>
+        <servlet-name>dispatcher</servlet-name>
+  </servlet>
+    
   <context-root>/MessageSystem</context-root>
+  <resource-ref>
+    <res-ref-name>dataSource</res-ref-name>
+    <jndi-name>java:/jdbc/dataSource</jndi-name>
+  </resource-ref>
 </jboss-web>
