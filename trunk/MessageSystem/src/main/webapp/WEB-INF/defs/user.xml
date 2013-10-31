@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+      "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+    <definition name="user/form" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/user/form.jsp" />
+        <put-attribute name="crumbs" value="/WEB-INF/views/crumb/list.jsp"/>
+    </definition>
+    <definition name="user/list" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/user/list.jsp" />
+        <put-attribute name="crumbs" value="/WEB-INF/views/crumb/main.jsp"/>
+    </definition>
+    <definition name="user/success" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/user/success.jsp" />
+        <put-attribute name="crumbs" value="/WEB-INF/views/crumb/list.jsp"/>
+    </definition>
+    <definition name="user/error" extends="template">
+        <put-attribute name="content" value="/WEB-INF/views/user/error.jsp" />
+        <put-attribute name="crumbs" value="/WEB-INF/views/crumb/list.jsp"/>
+    </definition>
+</tiles-definitions>
