@@ -22,7 +22,7 @@
         <th style="width: 30%">Действия</th>
         </sec:authorize>
     </tr>
-    <c:forEach items="${users}" var="user">
+    <c:forEach items="${users}" var="user" varStatus="iter">
         <c:url value="update" var="updateURL">
             <c:param name="userID" value="${user.id}"/>
         </c:url>
@@ -33,7 +33,7 @@
         </c:url>
         <c:url value="/message/sent/${user.userName}" var="sentURL">
         </c:url>
-        <tr>
+        <tr style="background-color: ${((iter.index % 2) == 0) ? '#fff' : '#ddd'}">
             <td><c:out value="${user.lastname}"/></td>
             <td><c:out value="${user.firstname}"/></td>
             <td><c:out value="${user.userName}"/></td>

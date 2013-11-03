@@ -14,12 +14,12 @@
             <th>Сообщение</th>
             <th>Действия</th>
         </tr>
-        <c:forEach var="message" items="${messages}">
+        <c:forEach var="message" items="${messages}" varStatus="iter">
             <c:url value="delete" var="deleteURL">
                 <c:param name="messageID" value="${message.id}"/>
                 <c:param name="messageType" value="inbox"/>
             </c:url>
-            <tr>
+            <tr style="background-color: ${((iter.index % 2) == 0) ? '#fff' : '#ddd'}">
                 <td>${message.fromUser}</td>
                 <td>${message.title}</td>
                 <td>${message.messageText}</td>
